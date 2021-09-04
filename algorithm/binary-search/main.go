@@ -6,13 +6,13 @@ import (
 )
 
 var (
-	errTreeNil = errors.New("Tree is nil")
+	errTreeNil    = errors.New("Tree is nil")
 	errValueExist = errors.New("Node value already exists")
 )
 
 type TreeNode struct {
-	val int
-	left *TreeNode
+	val   int
+	left  *TreeNode
 	right *TreeNode
 }
 
@@ -72,7 +72,7 @@ func (t *TreeNode) PrintInOrder() {
 
 func main() {
 	tree := &TreeNode{val: 50}
-	
+
 	tree.Insert(100)
 	tree.Insert(10)
 	tree.Insert(30)
